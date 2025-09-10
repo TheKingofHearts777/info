@@ -1,11 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dylan Brodie · Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
+
 <body>
-    
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html">Dylan Brodie</a>
+            <nav class="top-nav">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h2>Classroom Attendance App</h2>
+        <p> This project was made using React.js for the <br>
+            frontend, Java Spring Boot for the backend, PostgreSQL for <br>
+            the database, and some Python for the microcontroller <br>
+            elements. The main use-case for this app is for <br>
+            a classroom setting. There would be an RFID scanner <br>
+            located at the entrance to a classroom, and each <br>
+            student would have an ID-card to scan on the scanner. <br>
+            It would then update our database with the time they <br>
+            scanned in, their name, id, current class, and other <br>
+            useful information. There is, then, a client side for <br>
+            student, teacher, and admin use. The teachers would be <br>
+            able to manually enter checkin/checkout times, look at <br>
+            their class attendance, and update accordingly. The <br>
+            student view is a page with their classes all in a column. <br>
+            Clicking one of these classes will send them to another page <br>
+            showing them their attendance for the past school year/semester <br>
+            in that class and whether they were absent, late, or on time. <br>
+            The adminstrator page allows for the assignment of teachers to <br>
+            classes, sections, and rooms. It also enables the assignment of <br>
+            students to classes, and allows updating of attendance as well.
+        </p>
+        <img src="/assets/img/classroom-attendance-app-login.png" alt="Classroom Attendance App Login">
+        <img src="/assets/img/classroom-attendance-app-studentview.png" alt="Classroom Attendance App Student view">
+        <img src="/assets/img/classroom-attendance-app-teacherview.png" alt="Classroom Attendance App Teacher view">
+        <img src="/assets/img/classroom-attendance-app-adminview.png" alt="Classroom Attendance App Admin view">
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <small>© 2025 Dylan Brodie. All rights reserved.</small>
+        </div>
+    </footer>
 </body>
+
 </html>
