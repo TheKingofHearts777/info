@@ -185,6 +185,7 @@ main.container {
 }
 
 .demo-img {
-    width: 1000px;
+    max-width: 1500px;
+    min-width: min-content;
     height: auto;
 }
