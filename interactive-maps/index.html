@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Faerûn Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="icon" href="Resources/favicon-32x32.png" type="image/x-icon">
+    <style>
+        /* Style the layout and map container */
+        #container {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #markerActions {
+            width: 200px;
+            background: white;
+            padding: 10px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        #markerActions .section {
+            margin-bottom: 15px;
+        }
+
+        #markerActions input, #markerActions button {
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        #map {
+            flex-grow: 1;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .leaflet-marker-icon:hover + .leaflet-tooltip {
+            opacity: 1;
+        }
+
+        .leaflet-tooltip {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- Control box on the left side -->
+        <div id="markerActions">
+            <div class="section">
+                <button onclick="saveMarkersToServer()">Save Markers</button>
+            </div>
+            <div class="section">
+                <input type="text" id="loadFilename" placeholder="Enter filename to load">
+                <button onclick="loadMarkersFromServer(document.getElementById('loadFilename').value)">Load Markers</button>
+            </div>
+            <div class="section">
+                <button onclick="clearMarkers()">Clear Map</button>
+            </div>
+            <div class="section">
+                <input type="text" id="searchInput" placeholder="Search by Place Name">
+                <button onclick="searchMarker()">Search</button>
+            </div>
+        </div>
+
+        <!-- Map container -->
+        <div id="map"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
