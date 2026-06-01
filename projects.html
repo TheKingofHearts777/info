@@ -77,9 +77,13 @@
 
     <footer class="site-footer">
         <div class="container">
-            <small>© 2025 Dylan Brodie. All rights reserved.</small>
+            <p>&copy; <span id="year"></span> Dylan Brodie. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 

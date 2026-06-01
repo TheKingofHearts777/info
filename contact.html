@@ -25,26 +25,32 @@
         <!-- Page-specific content goes here -->
         <h1>Contact</h1>
         <div class="contact-list">
-<div class="contact-row">
-            <img src="assets/img/MailOutlined.svg" alt="Logo" width="18" height="18">
-            <span><a href="mailto:dbrodie678@gmail.com">dbrodie678@gmail.com</a></span>
-        </div>
-        <!-- Updated world icon for LinkedIn link -->
-        <div class="contact-row">
-            <img src="assets/img/LinkedinV1Fill.svg" alt="Logo" width="18" height="18">
-            <span>
-                <a href="https://www.linkedin.com/in/dylan-brodie-62242b1a7/" target="_blank" rel="noopener noreferrer">
-                    https://www.linkedin.com/in/dylan-brodie-62242b1a7/
-                </a>
-            </span>
-        </div>
+            <div class="contact-row">
+                <img src="assets/img/MailOutlined.svg" alt="Logo" width="18" height="18">
+                <span><a href="mailto:dbrodie678@gmail.com">dbrodie678@gmail.com</a></span>
+            </div>
+            <!-- Updated world icon for LinkedIn link -->
+            <div class="contact-row">
+                <img src="assets/img/LinkedinV1Fill.svg" alt="Logo" width="18" height="18">
+                <span>
+                    <a href="https://www.linkedin.com/in/dylan-brodie-62242b1a7/" target="_blank"
+                        rel="noopener noreferrer">
+                        https://www.linkedin.com/in/dylan-brodie-62242b1a7/
+                    </a>
+                </span>
+            </div>
         </div>
     </main>
+
     <footer class="site-footer">
         <div class="container">
-            <small>© 2025 Dylan Brodie. All rights reserved.</small>
+            <p>&copy; <span id="year"></span> Dylan Brodie. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 

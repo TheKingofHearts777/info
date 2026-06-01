@@ -30,13 +30,18 @@
         </p>
     </main>
     <section class="embed-section">
-            <iframe src="https://thekingofhearts777.github.io/Interactive-Maps/" width="100%" height="900"></iframe>
-        </section>
+        <iframe src="https://thekingofhearts777.github.io/Interactive-Maps/" width="100%" height="900"></iframe>
+    </section>
+    
     <footer class="site-footer">
         <div class="container">
-            <small>© 2025 Dylan Brodie. All rights reserved.</small>
+            <p>&copy; <span id="year"></span> Dylan Brodie. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
