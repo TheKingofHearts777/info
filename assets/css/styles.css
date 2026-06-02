@@ -116,6 +116,8 @@ main.container {
     border-radius: var(--radius);
     padding: 1rem;
     background: #fff;
+    display: flex;
+    flex-direction: column;
     transition: border-color 0.15s, box-shadow 0.15s;
 }
 
@@ -142,7 +144,7 @@ main.container {
     display: flex;
     gap: .5rem;
     flex-wrap: wrap;
-    margin: .5rem 0 0;
+    margin-top: auto;
 }
 
 .tag {

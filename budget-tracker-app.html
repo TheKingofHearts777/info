@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dylan Brodie · Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body class="project-detail">
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html">Dylan Brodie</a>
+            <nav class="top-nav">
+                <a href="index.html">Home</a>
+                <a href="projects.html" aria-current="page">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container main-centered">
+        <h2>Budget Management Application</h2>
+        <p> This project is a budget management application that I created
+            using HTML, CSS, and JavaScript. The application allows users
+            to input their income and expenses per month, and then calculates
+            their total income, total expenses, and remaining budget per month.
+            The application allows users to add multiple income and expense entries,
+            and it updates the calculations in real-time as the user inputs data. The user
+            can go to previous months and future months to see their budget for those
+            months as well. All information is saved in the browser's local storage,
+            so the user can close the application and come back to it later without
+            losing their data. The application also includes a simple and clean user
+            interface, making it easy for users to navigate and manage their budget
+            effectively.
+        </p>
+    </main>
+    <section class="embed-section">
+        <iframe src="https://thekingofhearts777.github.io/budget-tracker-app/" width="100%" height="750"></iframe>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Dylan Brodie. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
